@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page - Hero Section</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Add your custom CSS styles here */
+        /* Sticky and Frosted Navbar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 0 0;
+        }
+
+        .hero-content {
+            margin-bottom: 30px;
+        }
+
+        /* New styles for video container */
+        .hero-video {
+            width: 50%; /* Video is 50% width in desktop view */
+            height: 50%;
+            border-radius: 30px;
+            overflow: hidden;
+            border: 2px solid #212427;
+            border-radius: 0 30px 30px 30px;
+        }
+
+        .hero-video video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .order-md-2 {
+            justify-content: center;
+            align-items: center;
+            height: 75%;
+        }
+
+        /* Media query for mobile view */
+        @media (max-width: 767.98px) {
+            .hero-video {
+                width: 100%; /* Video spans across the screen in mobile view */
+                margin: 10% 0 0 0;
+            }
+        }
+
+        /* Feature section styles */
+        .feature-section {
+            padding: 50px 0;
+        }
+
+        .feature-item {
+            margin-bottom: 30px;
+        }
+
+        .feature-icon {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        /* Media query for small devices */
+        @media (max-width: 575.98px) {
+            .feature-icon {
+                font-size: 28px;
+            }
+        }
+
+
+        .pricing-card {
+            border: 1px solid #e2e2e2;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .pricing-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .pricing-price {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .pricing-feature {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .pricing-feature li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Your Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-md-center">
+                <div class="col-md-6 order-md-1 hero-content">
+                    <h1>Your Product Name</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique nisi eu risus
+                        aliquet, eu volutpat dui venenatis.</p>
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="col-md-6 order-md-2">
+                    <div class="hero-video">
+                        <video autoplay muted loop playsinline>
+                            <source src="assets/kojodatchi.mp4" type="video/mp4">
+                            <!-- Add more <source> elements for other video formats if needed -->
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="feature-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 feature-item">
+                    <img src="path/to/feature1-image.jpg" alt="Feature 1 Image" class="img-fluid">
+                    <i class="fas fa-check-circle feature-icon"></i>
+                    <h3>Feature 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-md-4 feature-item">
+                    <img src="path/to/feature2-image.jpg" alt="Feature 2 Image" class="img-fluid">
+                    <i class="fas fa-check-circle feature-icon"></i>
+                    <h3>Feature 2</h3>
+                    <p>Phasellus tristique nisi eu risus aliquet, eu volutpat dui venenatis.</p>
+                </div>
+                <div class="col-md-4 feature-item">
+                    <img src="path/to/feature3-image.jpg" alt="Feature 3 Image" class="img-fluid">
+                    <i class="fas fa-check-circle feature-icon"></i>
+                    <h3>Feature 3</h3>
+                    <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-section">
+        <div class="container">
+            <div class="row">
+                <!-- Content on the left -->
+                <div class="col-md-6 order-md-1 feature-item">
+                    <i class="fas fa-check-circle feature-icon"></i>
+                    <h3>Feature Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique nisi eu risus aliquet, eu volutpat dui venenatis.</p>
+                </div>
+                <!-- Image on the right (Mobile: Image goes below) -->
+                <div class="col-md-6 order-md-2">
+                    <img src="path/to/feature-image.jpg" alt="Feature Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-section">
+        <div class="container">
+            <div class="row">
+                <!-- Content on the left (Desktop: col-md-6, Mobile: col-md-12) -->
+                <div class="col-md-6 order-md-2 feature-item">
+                    <i class="fas fa-check-circle feature-icon"></i>
+                    <h3>Feature Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique nisi eu risus aliquet, eu volutpat dui venenatis.</p>
+                </div>
+                <!-- Image on the right (Mobile: Image goes below) -->
+                <div class="col-md-6 order-md-1">
+                    <img src="path/to/feature-image.jpg" alt="Feature Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="row">
+                <!-- Pricing Plan 1 -->
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <div class="pricing-title">Basic Plan</div>
+                        <div class="pricing-price">$19.99/month</div>
+                        <ul class="pricing-feature">
+                            <li>Feature 1</li>
+                            <li>Feature 2</li>
+                            <li>Feature 3</li>
+                            <!-- Add more features here -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pricing Plan 2 -->
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <div class="pricing-title">Standard Plan</div>
+                        <div class="pricing-price">$29.99/month</div>
+                        <ul class="pricing-feature">
+                            <li>Feature 1</li>
+                            <li>Feature 2</li>
+                            <li>Feature 3</li>
+                            <!-- Add more features here -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pricing Plan 3 -->
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <div class="pricing-title">Premium Plan</div>
+                        <div class="pricing-price">$49.99/month</div>
+                        <ul class="pricing-feature">
+                            <li>Feature 1</li>
+                            <li>Feature 2</li>
+                            <li>Feature 3</li>
+                            <!-- Add more features here -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    
+
+    
+    
+
+    <!-- Link to Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
